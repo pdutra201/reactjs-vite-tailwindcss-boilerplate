@@ -39,8 +39,7 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <nav className={`md:py-10 md:px-10 flex justify-between items-center md:sticky top-0 z-10 
-      ${scrolled ? 'bg-primary-white border-b-4 border-x-2 border-black rounded-b-2xl my-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] shadow-opacity-50' : 'bg-transparent'}`}>
+    <nav className={`md:py-10 md:px-10 flex justify-between items-center md:sticky top-0 z-[999] bg-primary-white border-b-4 border-x-2 border-black rounded-b-2xl shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] shadow-opacity-50' : 'bg-transparent'`}>
       <div className="w-full md:flex justify-between hidden">
         <div className="w-full lg:w-2/3">
           <ul className='font-Archivo font-semibold text-xl flex w-full justify-between'>

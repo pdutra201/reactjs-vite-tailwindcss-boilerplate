@@ -7,12 +7,13 @@ import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import './app.css'
+import Footer from './footer'
 
 function App() {
   return (
     <div id="root">
-      <div className="bg-primary-white">
-        <div className=" w-3/4 min-h-screen bg-primary-white mx-auto">
+      <div className="bg-primary-white w-full min-h-screen flex justify-center">
+        <div className=" w-3/4 min-h-screen bg-white-300 mx-auto">
           <Nav />
           <Home />
           <About />
@@ -20,7 +21,7 @@ function App() {
           <Skills />
           <Experience />
           <Contact />
-
+          <Footer />
         </div>
 
       </div>

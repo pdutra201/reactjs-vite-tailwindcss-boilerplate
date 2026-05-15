@@ -10,6 +10,7 @@ export default {
       },
       fontFamily: {
         Archivo: ['Archivo', 'sans-serif'],
+        DelaGothicOne: ['Dela Gothic One', 'sans-serif'],
       },
       dropShadow: {
         navglow: '0 0 6px rgba(249, 115, 22, 0.8)',
