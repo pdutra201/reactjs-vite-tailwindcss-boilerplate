@@ -1,49 +1,99 @@
+import selfie from "../../assets/self.jpeg";
 
+const traits = ["Creative", "Analytical", "Adaptive", "Curious"];
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="bg-yellow-400 flex flex-col-reverse xl:flex-row justify-between items-center py-32 px-12 mt-20 -mx-[16.7%] relative border-t-8 border-black">
-      <div className="absolute md:w-64 md:h-20 bg-yellow-400 border-x-8 border-t-8 border-black rounded-t-2xl z-40 xl:-top-[5rem] md:-top-[80px] -top-[52px]  left-2 md:left-8 font-DelaGothicOne md:text-4xl text-xl flex justify-evenly items-center py-2">
-        <img src="data:image/svg+xml,%3csvg%20width='50'%20height='50'%20viewBox='0%200%2081%2081'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M9.10093%209.10093C9.2355%208.96669%209.39521%208.8603%209.57093%208.78783C9.74665%208.71536%209.93492%208.67823%2010.125%208.67857H18.8036C19.9544%208.67857%2021.0581%208.2214%2021.8719%207.40762C22.6857%206.59385%2023.1429%205.49014%2023.1429%204.33929C23.1429%203.18844%2022.6857%202.08472%2021.8719%201.27095C21.0581%200.457173%2019.9544%200%2018.8036%200L10.125%200C7.43968%200%204.86435%201.06674%202.96554%202.96554C1.06674%204.86435%200%207.43968%200%2010.125L0%2018.8036C0%2019.9544%200.457173%2021.0581%201.27095%2021.8719C2.08472%2022.6857%203.18844%2023.1429%204.33929%2023.1429C5.49014%2023.1429%206.59385%2022.6857%207.40762%2021.8719C8.2214%2021.0581%208.67857%2019.9544%208.67857%2018.8036V10.125C8.67823%209.93492%208.71536%209.74665%208.78783%209.57093C8.8603%209.39521%208.96669%209.2355%209.10093%209.10093ZM81%2062.1964C81%2061.0456%2080.5428%2059.9419%2079.729%2059.1281C78.9153%2058.3143%2077.8116%2057.8571%2076.6607%2057.8571C75.5099%2057.8571%2074.4062%2058.3143%2073.5924%2059.1281C72.7786%2059.9419%2072.3214%2061.0456%2072.3214%2062.1964V70.875C72.3214%2071.2586%2072.169%2071.6265%2071.8978%2071.8978C71.6265%2072.169%2071.2586%2072.3214%2070.875%2072.3214H62.1964C61.0456%2072.3214%2059.9419%2072.7786%2059.1281%2073.5924C58.3143%2074.4062%2057.8571%2075.5099%2057.8571%2076.6607C57.8571%2077.8116%2058.3143%2078.9153%2059.1281%2079.729C59.9419%2080.5428%2061.0456%2081%2062.1964%2081H70.875C73.5603%2081%2076.1357%2079.9333%2078.0345%2078.0345C79.9333%2076.1357%2081%2073.5603%2081%2070.875V62.1964ZM4.33929%2057.8571C5.49014%2057.8571%206.59385%2058.3143%207.40762%2059.1281C8.2214%2059.9419%208.67857%2061.0456%208.67857%2062.1964V70.875C8.67857%2071.2586%208.83096%2071.6265%209.10222%2071.8978C9.37348%2072.169%209.74138%2072.3214%2010.125%2072.3214H18.8036C19.9544%2072.3214%2021.0581%2072.7786%2021.8719%2073.5924C22.6857%2074.4062%2023.1429%2075.5099%2023.1429%2076.6607C23.1429%2077.8116%2022.6857%2078.9153%2021.8719%2079.729C21.0581%2080.5428%2019.9544%2081%2018.8036%2081H10.125C7.43968%2081%204.86435%2079.9333%202.96554%2078.0345C1.06674%2076.1357%200%2073.5603%200%2070.875L0%2062.1964C0%2061.0456%200.457173%2059.9419%201.27095%2059.1281C2.08472%2058.3143%203.18844%2057.8571%204.33929%2057.8571ZM62.1964%200C61.0456%200%2059.9419%200.457173%2059.1281%201.27095C58.3143%202.08472%2057.8571%203.18844%2057.8571%204.33929C57.8571%205.49014%2058.3143%206.59385%2059.1281%207.40762C59.9419%208.2214%2061.0456%208.67857%2062.1964%208.67857H70.875C71.2586%208.67857%2071.6265%208.83096%2071.8978%209.10222C72.169%209.37348%2072.3214%209.74138%2072.3214%2010.125V18.8036C72.3214%2019.9544%2072.7786%2021.0581%2073.5924%2021.8719C74.4062%2022.6857%2075.5099%2023.1429%2076.6607%2023.1429C77.8116%2023.1429%2078.9153%2022.6857%2079.729%2021.8719C80.5428%2021.0581%2081%2019.9544%2081%2018.8036V10.125C81%207.43968%2079.9333%204.86435%2078.0345%202.96554C76.1357%201.06674%2073.5603%200%2070.875%200H62.1964ZM40.5%2044.9897C35.281%2044.9894%2030.1867%2046.5849%2025.9002%2049.5621C21.6138%2052.5394%2018.3401%2056.7561%2016.5182%2061.6468C15.8702%2063.3767%2017.253%2065.0893%2019.0986%2065.0893H61.8898C63.7412%2065.0893%2065.1182%2063.3767%2064.476%2061.6468C62.6541%2056.7561%2059.3805%2052.5394%2055.094%2049.5621C50.8075%2046.5849%2045.719%2044.9894%2040.5%2044.9897ZM53.2749%2025.8101C53.2749%2029.202%2051.9274%2032.455%2049.5289%2034.8535C47.1305%2037.252%2043.8775%2038.5994%2040.4855%2038.5994C37.0936%2038.5994%2033.8406%2037.252%2031.4421%2034.8535C29.0437%2032.455%2027.6962%2029.202%2027.6962%2025.8101C27.6962%2022.4181%2029.0437%2019.1651%2031.4421%2016.7667C33.8406%2014.3682%2037.0936%2013.0207%2040.4855%2013.0207C43.8775%2013.0207%2047.1305%2014.3682%2049.5289%2016.7667C51.9274%2019.1651%2053.2749%2022.4181%2053.2749%2025.8101Z'%20fill='black'/%3e%3c/svg%3e"></img>
-        <h1 >About</h1>
-        
+    <section
+      id="about"
+      className="bg-yellow-400 pt-40 pb-28 md:pt-44 md:pb-32 px-4 md:px-12 mt-20 -mx-[16.7%] relative border-t-8 border-black overflow-visible"
+    >
+      <div
+        className="absolute bg-yellow-400 border-x-8 border-t-8 border-black rounded-t-2xl z-[100]
+        top-[-3.5rem] md:top-[-5rem] left-4 md:left-8
+        w-[210px] h-[56px] md:w-64 md:h-20
+        font-DelaGothicOne text-2xl md:text-4xl
+        flex justify-center items-center"
+      >
+        <h1>About</h1>
       </div>
-      <div className="flex md:flex-row justify-between items-center">
-          <div className="bg-purple-300 rounded-2xl border-8 border-black w-[500px] h-[600px] flex flex-col col-4 shadow-[8px_8px_0px_rgba(0,0,0,1)] font-Archivo font-semibold text-md ">
-            <p className="p-4">
-              I’m the kind of developer who blends creativity with logic — someone who enjoys building applications that not only work well, but feel intuitive and engaging to use. I care just as much about clean, human-readable code as I do about creating polished user experiences that people genuinely enjoy interacting with.
-            </p>
-            <p className="p-4">
-              Whether I’m designing a front end, solving backend problems, or learning a new technology, I’m always looking for ways to improve, simplify, and build things more efficiently. I enjoy the process of turning ideas into real, functional products and constantly pushing myself to grow as both a developer and a creator.
-            </p>
-            <p className="p-4">
-              Outside of coding, you’ll usually find me diving into personal projects, exploring new tech, listening to music, spending time with my wife, or getting lost in a great RPG. I’m driven by curiosity, creativity, and the mindset that there’s always something new to learn or improve.
-            </p>
-            <p className="p-4">
-              I’m Philip, and I’d love to build something great with you.
-            </p>
-          </div>
-          <div className="flex flex-col justify-between items-center -mx-2 gap-6">
-            <div className="flex flex-col bg-orange-500 rounded-2xl items-center justify-center border-8 border-black w-[300px] h-[100px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-                <h1 className="text-black text-xl font-semibold font-Archivo text-center">Creative</h1>
-            </div>
-            <div className="flex flex-col bg-orange-500 rounded-2xl items-center justify-center border-8 border-black w-[300px] h-[100px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-                <h1 className="text-black text-xl font-semibold font-Archivo text-center">Analytical</h1>
-            </div>
-            <div className="flex flex-col bg-orange-500 rounded-2xl items-center justify-center border-8 border-black w-[300px] h-[100px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-                <h1 className="text-black text-xl font-semibold font-Archivo text-center">Adaptive</h1>
-            </div>
-            <div className="flex flex-col bg-orange-500 rounded-2xl items-center justify-center border-8 border-black w-[300px] h-[100px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-                <h1 className="text-black text-xl font-semibold font-Archivo text-center">Curious</h1>
-            </div>
-            
-            
-            
-          </div>
-        </div>
-        
-    </section>
-  )
-}
 
-export default About
+     
+      <div
+        className="w-full max-w-7xl mx-auto
+        flex flex-col xl:flex-row
+        items-center justify-center
+        gap-6 xl:gap-16"
+      >
+      
+        <div
+          className="bg-purple-300 rounded-2xl border-8 border-black
+          w-full max-w-[540px]
+          shadow-[8px_8px_0px_rgba(0,0,0,1)]
+          font-Archivo font-semibold
+          text-base md:text-xl
+          leading-relaxed
+          p-6 md:p-8"
+        >
+          <p className="mb-8">
+            I’m the kind of developer who blends creativity with logic —
+            someone who enjoys building applications that not only work well,
+            but feel intuitive and engaging to use.
+          </p>
+
+          <p className="mb-8">
+            Whether I’m designing a front end, solving backend problems, or
+            learning a new technology, I’m always looking for ways to improve,
+            simplify, and build things more efficiently.
+          </p>
+
+          <p className="mb-8">
+            Outside of coding, you’ll usually find me diving into personal
+            projects, exploring new tech, listening to music, spending time
+            with my wife, or getting lost in a great RPG.
+          </p>
+
+          <p>
+            I’m Philip, and I’d love to build something great with you.
+          </p>
+        </div>
+
+        <div
+          className="w-full max-w-[540px] xl:max-w-[320px]
+          grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1
+          gap-6"
+        >
+          {traits.map((trait) => (
+            <div
+              key={trait}
+              className="bg-orange-500 rounded-2xl border-8 border-black
+              w-full h-[90px]
+              flex items-center justify-center
+              shadow-[8px_8px_0px_rgba(0,0,0,1)]"
+            >
+              <h2 className="text-black text-xl font-semibold font-Archivo text-center">
+                {trait}
+              </h2>
+            </div>
+          ))}
+        </div>
+
+        <div
+          className="bg-[#efeee3] rounded-2xl border-8 border-black
+          w-full max-w-[360px] aspect-square
+          flex items-center justify-center
+          shadow-[8px_8px_0px_rgba(0,0,0,1)]
+          overflow-hidden"
+        >
+          <img
+            src={selfie}
+            alt="Philip Dutra"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
