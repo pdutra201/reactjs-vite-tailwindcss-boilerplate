@@ -9,23 +9,32 @@ const About: React.FC = () => {
         
       </div>
       <div className="flex md:flex-row justify-between items-center">
-          <div className="bg-purple-300 rounded-2xl border-8 border-black w-[500px] h-[600px] flex justify-center items-center shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-            <p>
-              testing
+          <div className="bg-purple-300 rounded-2xl border-8 border-black w-[500px] h-[600px] flex flex-col col-4 shadow-[8px_8px_0px_rgba(0,0,0,1)] font-Archivo font-semibold text-md ">
+            <p className="p-4">
+              I’m the kind of developer who blends creativity with logic — someone who enjoys building applications that not only work well, but feel intuitive and engaging to use. I care just as much about clean, human-readable code as I do about creating polished user experiences that people genuinely enjoy interacting with.
+            </p>
+            <p className="p-4">
+              Whether I’m designing a front end, solving backend problems, or learning a new technology, I’m always looking for ways to improve, simplify, and build things more efficiently. I enjoy the process of turning ideas into real, functional products and constantly pushing myself to grow as both a developer and a creator.
+            </p>
+            <p className="p-4">
+              Outside of coding, you’ll usually find me diving into personal projects, exploring new tech, listening to music, spending time with my wife, or getting lost in a great RPG. I’m driven by curiosity, creativity, and the mindset that there’s always something new to learn or improve.
+            </p>
+            <p className="p-4">
+              I’m Philip, and I’d love to build something great with you.
             </p>
           </div>
           <div className="flex flex-col justify-between items-center -mx-2 gap-6">
             <div className="flex flex-col bg-orange-500 rounded-2xl items-center justify-center border-8 border-black w-[300px] h-[100px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-                <h1 className="text-black text-xl font-semibold font-Archivo text-center">test</h1>
+                <h1 className="text-black text-xl font-semibold font-Archivo text-center">Creative</h1>
             </div>
             <div className="flex flex-col bg-orange-500 rounded-2xl items-center justify-center border-8 border-black w-[300px] h-[100px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-                <h1 className="text-black text-xl font-semibold font-Archivo text-center">test</h1>
+                <h1 className="text-black text-xl font-semibold font-Archivo text-center">Analytical</h1>
             </div>
             <div className="flex flex-col bg-orange-500 rounded-2xl items-center justify-center border-8 border-black w-[300px] h-[100px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-                <h1 className="text-black text-xl font-semibold font-Archivo text-center">test</h1>
+                <h1 className="text-black text-xl font-semibold font-Archivo text-center">Adaptive</h1>
             </div>
             <div className="flex flex-col bg-orange-500 rounded-2xl items-center justify-center border-8 border-black w-[300px] h-[100px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-                <h1 className="text-black text-xl font-semibold font-Archivo text-center">test</h1>
+                <h1 className="text-black text-xl font-semibold font-Archivo text-center">Curious</h1>
             </div>
             
             
@@ -33,7 +42,6 @@ const About: React.FC = () => {
           </div>
         </div>
         
-      {/* content */}
     </section>
   )
 }
