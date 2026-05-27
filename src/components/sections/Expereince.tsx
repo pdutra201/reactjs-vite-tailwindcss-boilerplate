@@ -1,16 +1,16 @@
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Full-Stack Developer Intern",
+      title: "Full-Stack Developer",
       company: "Apple",
-      date: "2025",
+      date: "2026",
       description:
         "Built and modernized internal tools using Angular, TypeScript, PHP, MySQL, and Tailwind CSS. Focused on improving user experience, streamlining workflows, and creating cleaner, more maintainable UI.",
     },
     {
-      title: "Developer Intern",
+      title: "Full-Stack Developer",
       company: "mymedicalimages.com",
-      date: "2025 - Present",
+      date: "2026 - Present",
       description:
         "Assisted in the development and modernization of internal web applications and medical imaging workflows. Worked across both front-end and backend systems using Angular, PHP, MySQL, and Tailwind CSS while helping improve UI design, workflow efficiency, and overall application functionality.",
     },
