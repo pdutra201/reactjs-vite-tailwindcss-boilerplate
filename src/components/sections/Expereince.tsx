@@ -41,7 +41,7 @@ const Experience: React.FC = () => {
             <div className="flex justify-between gap-6 items-start mb-6">
               <div>
                 <h3 className="text-3xl font-black">{exp.title}</h3>
-                <p className="text-xl font-bold text-purple-700">
+                <p className="text-md font-bold text-purple-700">
                   {exp.company}
                 </p>
               </div>
